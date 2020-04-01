@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Media</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="top">
+
+  <div class="mainNav">
+    <nav class="nav">
+      <ul>
+        <li><a href="#home" data-message="Home Section Link">Accessible Media</a></li>
+      </ul>
+      <ul>
+        <li><a href="#movies" data-message="Movies Section Link">Movies</a></li>
+      </ul>
+      <ul>
+        <li><a href="#music" data-message="Music Section Link">Music</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <h1 id="home">Accessible Media</h1>
+    <p>Our site has a variety of customizable options to make your expierence more enjoyable!</p>
+  <hr>
+
+  <div id="movies">
+    <h2>Watch A Movie: Disney's Mulan - 2020</h2>
+    <p>Closed captioning is avalible</p>
+    <video src="video/mulan.mp4" controls width="1100">
+      <track kind="subtitles" label="English Subtitles" srclang="en" src="vtt/mulan.vtt"/>
+      Your Browser Element Does Not Support This Element. 
+      <a href="https://www.youtube.com/watch?v=KK8FHdFluOQ&t=8s">Click Here for a link to the audio instead</a>
+    </video>
+  </div>
+  <hr>
+
+  <div id="music">
+    <h2>Listen To Music: Blinding Lights - By: The Weeknd</h2>
+    <p>Audio Transcript Avalible</p>
+    <audio title="Blinding Lights - The Weeknd" id="audio" ontimeupdate="playTranscript()" controls>
+        <source src="audio/BlindingLights.mp3" type="audio/mpeg">
+          Your Browser Element Does Not Support This Element. 
+          <a href="https://www.youtube.com/watch?v=4NRXx6U8ABQ">Click Here for a link to the audio instead</a>
+        <source>
+    </audio>
+
+    <!-- <button type="button" class="buttonShow" data-toggle="collapse">Show Audio Transcript</button> -->
+
+    <div id="transcriptWrapper" class="show">
+        <ul id="transcript">
+            <li class="1 lyric">Yeah</li>
+            <li class="2 lyric">
+                I been tryna call
+                I been on my own for long enough
+                Maybe you can show me how to love, maybe
+                I'm going through withdrawals
+                You don't even have to do too much
+                You can turn me on with just a touch, baby      
+            </li>
+
+            <li class="3 lyric">
+                I look around and Sin City's cold and empty (oh)
+                No one's around to judge me (oh)
+                I can't see clearly when you're gone
+            </li>
+
+            <li class="4 lyric">
+                I said, ooh, I'm blinded by the lights
+                No, I can't sleep until I feel your touch
+                I said, ooh, I'm drowning in the night
+                Oh, when I'm like this, you're the one I trust
+                Hey, hey, hey
+            </li>
+
+            <li class="5 lyric">
+                I'm running out of time
+                'Cause I can see the sun light up the sky
+                So I hit the road in overdrive, baby
+            </li>
+
+            <li class="6 lyric">
+                Oh, the city's cold and empty (oh)
+                No one's around to judge me (oh)
+                I can't see clearly when you're gone
+            </li>
+
+            <li class="7 lyric">
+                I said, ooh, I'm blinded by the lights
+                No, I can't sleep until I feel your touch
+                I said, ooh, I'm drowning in the night
+                Oh, when I'm like this, you're the one I trust
+            </li>
+
+            <li class="8 lyric">
+                I'm just walking by to let you know (by to let you know)
+                I can never say it on the phone (say it on the phone)
+                Will never let you go this time (ooh)
+            </li>
+
+            <li class="9 lyric">
+                I said, ooh, I'm blinded by the lights
+                No, I can't sleep until I feel your touch
+                Hey, hey, hey
+            </li>
+
+            <li class="10 lyric">
+                Hey, hey, hey
+            </li>
+
+            <li class="11 lyric">
+                I said, ooh, I'm blinded by the lights
+                No, I can't sleep until I feel your touch
+            </li>
+        </ul>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footerNav">
+      <nav class="nav">
+        <ul>
+          <li><a href="#home" data-message="Home Section Link">Accessible Media</a></li>
+        </ul>
+        <ul>
+          <li><a href="#movies" data-message="Movie Section Link">Movies</a></li>
+        </ul>
+        <ul>
+          <li><a href="#music" data-message="Music Section Link">Music</a></li>
+        </ul>
+        <ul>
+          <li>
+              <a href="#top" id="top" data-message="Back To Top Link">Back To Top</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  
+
+<script src="js/main.js"></script>
+</body>
+</html>
