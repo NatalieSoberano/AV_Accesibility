@@ -17,6 +17,7 @@ nav {
     background-color: black;
     padding: 15px;
     padding-left: 0px;
+    overflow: hidden;
 }
 
 nav ul {
@@ -28,6 +29,8 @@ nav ul {
 
 nav a {
     color: white;
+    float: left;
+    display: block;
 }
 
 nav ul li{
@@ -55,7 +58,7 @@ a:hover {
 
 video {
     margin: 0 auto;
-    padding-left: 30px;
+    padding-left: 75px;
 }
 
 #transcriptWrapper {
@@ -64,7 +67,7 @@ video {
     overflow: hidden;
     text-align: left;
     margin: 0 auto;
-    border: dodgerblue solid 4px;
+    border: #1e90ff solid 4px;
     padding: 20px;
     height: auto;
 }
@@ -95,7 +98,6 @@ video {
     font-size: 12px;
     padding-top: 15px;
 }
-
 
 
 

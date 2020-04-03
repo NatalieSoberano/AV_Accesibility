@@ -1,4 +1,4 @@
-var dialogueTimings = [0,4,9,11,18,24,29,31,44,45,47],
+var dialogueTimings = [35,49,73,83,116,127,140,165,176,197,210],
         dialogues = document.querySelectorAll('#transcript>li'),
         transcriptWrapper = document.querySelector('#transcriptWrapper'),
         audio = document.querySelector('#audio'),
@@ -18,7 +18,3 @@ function playTranscript() {
             currentDialogue.className +=' speaking';
         }
     };
-
-
-
-  
